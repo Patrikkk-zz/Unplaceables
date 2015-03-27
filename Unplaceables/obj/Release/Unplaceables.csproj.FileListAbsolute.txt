@@ -2,3 +2,7 @@ C:\Users\Magic\Documents\Visual Studio 2010\Projects\Unplaceables\Unplaceables\b
 C:\Users\Magic\Documents\Visual Studio 2010\Projects\Unplaceables\Unplaceables\bin\Release\Unplaceables.pdb
 C:\Users\Magic\Documents\Visual Studio 2010\Projects\Unplaceables\Unplaceables\obj\Release\Unplaceables.dll
 C:\Users\Magic\Documents\Visual Studio 2010\Projects\Unplaceables\Unplaceables\obj\Release\Unplaceables.pdb
+C:\Users\Magic\Dropbox\TshockCoding\Unplaceables\Unplaceables\bin\Release\Unplaceables.dll
+C:\Users\Magic\Dropbox\TshockCoding\Unplaceables\Unplaceables\bin\Release\Unplaceables.pdb
+C:\Users\Magic\Dropbox\TshockCoding\Unplaceables\Unplaceables\obj\Release\Unplaceables.dll
+C:\Users\Magic\Dropbox\TshockCoding\Unplaceables\Unplaceables\obj\Release\Unplaceables.pdb
