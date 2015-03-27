@@ -61,7 +61,7 @@ namespace Unplaceables
         }
         private void OnInitialize(EventArgs args)
         {
-            Commands.ChatCommands.Add(new Command("unplaceable", Place, "place") { AllowServer = false, HelpText="Allows you to place unplaceable tiles!"});
+            Commands.ChatCommands.Add(new Command("unplaceables.place", Place, "place") { AllowServer = false, HelpText="Allows you to place unplaceable tiles!"});
         }
 
         private void OnTileEdit(object sender, GetDataHandlers.TileEditEventArgs args)
@@ -190,10 +190,18 @@ namespace Unplaceables
 
         private static void WirePlace(int playerindex, int WireX, int WireY)
         {
+            var player = storage[playerindex];
             int ID = storage[playerindex].ID;
             int style = storage[playerindex].style;
             int x = WireX;
             int y = WireY;
+
+            if (TShock.Players[playerindex].CurrentRegion != null && !TShock.Players[playerindex].CurrentRegion.HasPermissionToBuildInRegion(TShock.Players[playerindex]))
+            {
+                TSPlayer.All.SendTileSquare(x, y);
+                player.tsplayer.SendErrorMessage("This region is protected from changes!");
+                return;
+            }
 
             if (ID == 233 || ID == 236) //JunglePlants
             {
